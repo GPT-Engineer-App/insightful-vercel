@@ -2,7 +2,7 @@ import React from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table";
-import { Progress } from "@/components/ui/progress";
+
 
 const Index = () => {
   return (
@@ -21,7 +21,9 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-2xl font-bold">12,345</p>
-                <Progress value={75} className="mt-2" />
+                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: '75%' }}></div>
+                </div>
               </CardContent>
             </Card>
             <Card>
@@ -30,7 +32,9 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-2xl font-bold">8,765</p>
-                <Progress value={60} className="mt-2" />
+                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: '60%' }}></div>
+                </div>
               </CardContent>
             </Card>
             <Card>
@@ -39,7 +43,9 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <p className="text-2xl font-bold">33%</p>
-                <Progress value={33} className="mt-2" />
+                <div className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-gray-700">
+                  <div className="bg-blue-600 h-2.5 rounded-full" style={{ width: '33%' }}></div>
+                </div>
               </CardContent>
             </Card>
           </div>
